@@ -1,5 +1,4 @@
 import csv
-from os.path import splitext
 from typing import Dict, List, Optional, Tuple
 
 Records = List[Dict[str, str]]
@@ -8,13 +7,13 @@ Columns = List[str]
 
 
 def split_csv(
-    filepath: str,
+    source: str,
     var_name: str,
     separator: str,
+    destinations: Tuple[str, str],
     primary_key: Optional[Columns] = None,
-    suffixes: Tuple[str, str] = ("_x", "_y"),
 ) -> None:
-    records = _read_csv(filepath)
+    records = _read_csv(source)
     columns = list(records[0].keys())
     if not _check_splittable(columns, separator):
         return
@@ -22,7 +21,7 @@ def split_csv(
         records,
         columns,
         separator,
-        f"{splitext(filepath)[0]}{suffixes[0]}.csv",
+        destinations[0],
     )
     _split_secondary(
         records,
@@ -30,7 +29,7 @@ def split_csv(
         var_name,
         separator,
         primary_key,
-        f"{splitext(filepath)[0]}{suffixes[1]}.csv",
+        destinations[1],
     )
 
 
