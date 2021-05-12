@@ -1,0 +1,5 @@
+id,salary,country::en,country::ja,job::en,job::ja,job::fr
+1,100000,Japan,日本,Software Engineer,ソフトウェアエンジニア,Ingénieur logiciel
+2,110000,United States,アメリカ,Sales Manager,営業部長,Directeur des ventes
+3,180000,France,フランス,Chief technology officer,最高技術責任者,Directeur de la technologie
+4,120000,United States,アメリカ,Financial Director,財務部長,

@@ -12,4 +12,5 @@ setup(
     author="ktftk",
     url="https://github.com/ktftk/csv_splitter",
     packages=find_packages(),
+    tests_require=["pytest", "csv-diff"],
 )

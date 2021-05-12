@@ -1,0 +1,13 @@
+id,language_code,country,job
+1,en,Japan,Software Engineer
+1,ja,日本,ソフトウェアエンジニア
+1,fr,,Ingénieur logiciel
+2,en,United States,Sales Manager
+2,ja,アメリカ,営業部長
+2,fr,,Directeur des ventes
+3,en,France,Chief technology officer
+3,ja,フランス,最高技術責任者
+3,fr,,Directeur de la technologie
+4,en,United States,Financial Director
+4,ja,アメリカ,財務部長
+4,fr,,
